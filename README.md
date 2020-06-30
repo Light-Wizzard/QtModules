@@ -1,7 +1,10 @@
 # QtModules
 A module for the Qt Maintenance-Tool to add my modules to your Qt installation.
 
-# Add my repositories to Qt MaintenanceTool
+## Forked
+I Forked this because I fored [qdep](https://github.com/Light-Wizzard/qdep), and making changes, some may not be good ones, for example, I never used docker, so I have no idea what I am changing, but I need to use my own Travis and AppVeyor accounts, so I need to figure this out.
+
+## Add my repositories to Qt MaintenanceTool
 This How-To explains how to add a custom repository to the Qt MainetenanceTool. This gives the advantage of an easy installation and maintenance of custom modules, and allows clean installations, deinstallations and updates.
 
 ## Add the repository
