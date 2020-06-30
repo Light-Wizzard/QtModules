@@ -2,9 +2,9 @@
 set -e
 
 if [ -z "$DOCKER_IMAGE" ]; then
-	image=skycoder42/qt-build
+	image=light-wizzard/qt-build
 else
-	image="skycoder42/qt-build:${QT_VER}-${PLATFORM}-${DOCKER_IMAGE}"
+	image="light-wizzard/qt-build:${QT_VER}-${PLATFORM}-${DOCKER_IMAGE}"
 fi
 
 if [ -z "$NO_DOCKER_RM" ]; then
