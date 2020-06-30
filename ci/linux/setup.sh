@@ -34,11 +34,11 @@ if [ -z "$DOCKER_IMAGE" ]; then
 	echo "CMD cd /root/project && /root/project/qtmodules-travis/ci/linux/build-docker.sh" >> $scriptdir/Dockerfile
 
 	if [ -z "$IMAGE_TAG" ]; then
-		image=skycoder42/qt-build
+		image=light-wizzard/qt-build
 	else
-		image="skycoder42/qt-build:${QT_VER}-${PLATFORM}-${IMAGE_TAG}"
+		image="light-wizzard/qt-build:${QT_VER}-${PLATFORM}-${IMAGE_TAG}"
 	fi
 	sudo docker build --pull -t "$image" "$scriptdir"
 else
-	sudo docker pull "skycoder42/qt-build:${QT_VER}-${PLATFORM}-${DOCKER_IMAGE}"
+	sudo docker pull "light-wizzard/qt-build:${QT_VER}-${PLATFORM}-${DOCKER_IMAGE}"
 fi
